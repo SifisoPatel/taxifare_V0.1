@@ -1,0 +1,55 @@
+tml {
+  background-color: #333232;
+  height: 100%;
+}
+
+#container {
+  height: 325px;
+  width: 350px;
+  background-color: #f5e4c3;
+
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  grid-template-areas:
+    ". taxi-fare"
+    ". money-sent-forward"
+    ". number-of-people"
+    ". to-back-seat"
+    ". to-driver"
+    "btn btn";
+  margin: 0 auto;
+  border: 5px solid #88b169;
+  padding: 25px;
+}
+
+#taxi_fare {
+  grid-area: taxi-fare;
+}
+
+#money_sent_forward {
+  grid-area: money-sent-forward;
+}
+
+#number_of_people {
+  grid-area: number-of-people;
+}
+
+#to_back_seat {
+  grid-area: to-back-seat;
+}
+
+#to_driver {
+  grid-area: to-driver;
+}
+
+.input-styling {
+  height: 25px;
+  width: 250px;
+}
+
+#btn {
+  grid-area: btn;
+  height: 25px;
+  width: auto;
+}
